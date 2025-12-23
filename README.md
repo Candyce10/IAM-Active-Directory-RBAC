@@ -6,11 +6,11 @@ This lab simulates a small enterprise Active Directory environment focused on Id
 
 The environment includes:
 
-Active Directory Domain Services
-Structured Organizational Units (OUs)
-Security groups for RBAC
-Network file shares with NTFS + share permissions
-Remote Desktop access controls
+Active Directory Domain Services <br>
+Structured Organizational Units (OUs)<br>
+Security groups for RBAC<br>
+Network file shares with NTFS + share permissions <br>
+Remote Desktop access controls <br>
 
 ## Environment
 
@@ -28,11 +28,11 @@ Custom OUs were created to avoid using default AD containers and to support scal
 Users were created and placed in department-specific OUs.
 ### Security Groups
 Access wass granted only through groups, never directly to users.
-HR_Read / HR_Modify
-Finance_Read / Finance_Modify
-Sales_Read
-IT_Admin
-Remote_Desktop_Users
+HR_Read / HR_Modify <br>
+Finance_Read / Finance_Modify <br>
+Sales_Read<br>
+IT_Admin<br>
+Remote_Desktop_Users <br>
 This implements Role-Based Access Control (RBAC) and simplifies access management.
 <img width="953" height="671" alt="Users in Correct OUs" src="https://github.com/user-attachments/assets/fa988a20-2de6-4eb9-8dac-471e16178bbe" />
 <img width="950" height="672" alt="Security Groups" src="https://github.com/user-attachments/assets/24783097-0752-414c-99d1-e4a9779a7558" />
@@ -57,8 +57,8 @@ Authenticated Users → Read & List (folder traversal only)
 
 Department Folders:
 
-HR folder → HR_Read (Read), HR_Modify (Modify)
-Finance folder → Finance_Read / Finance_Modify
+-HR folder → HR_Read (Read), HR_Modify (Modify)<br>
+Finance folder → Finance_Read / Finance_Modify<br>
 Sales folder → Sales_Read
 
 This ensures users can only access resources relevant to their role.
@@ -78,6 +78,7 @@ Access was tested by logging in as different users and verifying:
 Successful access to authorized folders
 
 Access denied to unauthorized folders
+<img width="1052" height="792" alt="access client A" src="https://github.com/user-attachments/assets/d1413e0a-a34e-4f71-961e-4e57ae1dc96e" />
 
 <img width="1058" height="802" alt="access success client B" src="https://github.com/user-attachments/assets/1bb1de66-bdab-48a3-9f54-227220c8f21d" />
 <img width="1182" height="795" alt="access denied client" src="https://github.com/user-attachments/assets/409f24e0-5295-4337-856b-def3ecb746a5" />
