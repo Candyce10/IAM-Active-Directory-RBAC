@@ -32,7 +32,7 @@ Access wass granted only through groups, never directly to users: <br>
 -Finance_Read / Finance_Modify <br>
 -Sales_Read<br>
 -IT_Admin<br>
-Remote_Desktop_Users <br><br>
+-Remote_Desktop_Users <br><br>
 This implements Role-Based Access Control (RBAC) and simplifies access management.
 <img width="953" height="671" alt="Users in Correct OUs" src="https://github.com/user-attachments/assets/fa988a20-2de6-4eb9-8dac-471e16178bbe" />
 <img width="950" height="672" alt="Security Groups" src="https://github.com/user-attachments/assets/24783097-0752-414c-99d1-e4a9779a7558" />
