@@ -73,9 +73,9 @@ Users can RDP into domain-joined client machines, while administrative access to
 
 ## Validation & Testing
 
-Access was tested by logging in as different users and verifying:
+Access was tested by logging in as an HR user and verifying:
 
-Successful access to authorized folders
+Successful access to authorized HR folders
 
 Access denied to unauthorized folders
 <img width="1052" height="792" alt="access client A" src="https://github.com/user-attachments/assets/d1413e0a-a34e-4f71-961e-4e57ae1dc96e" />
