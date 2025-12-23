@@ -53,7 +53,7 @@ Least privilege enforced via NTFS permissions
 
 ### NTFS Permissions
 Root Folder (CompanyShares):<br>
-Authenticated Users > Read & List (folder traversal only)
+-Authenticated Users > Read & List (folder traversal only)
 
 Department Folders:
 
@@ -68,16 +68,16 @@ This ensures users can only access resources relevant to their role.
 
 ## Remote Desktop Access
 Remote access was restricted using a dedicated security group:<br>
-Remote_Desktop_Users<br>
+-Remote_Desktop_Users<br>
+
 Users can RDP into domain-joined client machines, while administrative access to the Domain Controller remains restricted to privileged accounts.
 
 ## Validation & Testing
 
 Access was tested by logging in as an HR user and verifying:
 
-Successful access to authorized HR folders
-
-Access denied to unauthorized folders (Ex. Sales Folder)
+-Successful access to authorized HR folders
+-Access denied to unauthorized folders (Ex. Sales Folder)
 <img width="1052" height="792" alt="access client A" src="https://github.com/user-attachments/assets/d1413e0a-a34e-4f71-961e-4e57ae1dc96e" />
 
 <img width="1058" height="802" alt="access success client B" src="https://github.com/user-attachments/assets/1bb1de66-bdab-48a3-9f54-227220c8f21d" />
@@ -86,18 +86,11 @@ Access denied to unauthorized folders (Ex. Sales Folder)
 
 ## Skills Demonstrated
 
-Active Directory administration<br>
-
-Identity and Access Management (IAM)<br>
-
-Role-Based Access Control (RBAC)<br>
-
-Least privilege enforcement<br>
-
-Windows file sharing (SMB, NTFS)<br>
-
-Remote Desktop authorization <br>
-
-Troubleshooting authentication and authorization issues<br>
-
-Built and documented as part of hands-on IAM skill development.<br>
+-Active Directory administration<br>
+-Identity and Access Management (IAM)<br>
+-Role-Based Access Control (RBAC)<br>
+-Least privilege enforcement<br>
+-Windows file sharing (SMB, NTFS)<br>
+-Remote Desktop authorization <br>
+-Troubleshooting authentication and authorization issues<br>
+-Built and documented as part of hands-on IAM skill development.<br>
