@@ -59,7 +59,7 @@ Department Folders:
 
 -HR folder > HR_Read (Read), HR_Modify (Modify)<br>
 -Finance folder > Finance_Read / Finance_Modify<br>
--Sales folder > Sales_Read
+-Sales folder > Sales_Read<br>
 
 This ensures users can only access resources relevant to their role.
 <img width="1039" height="814" alt="NTFS Permissions - root folder" src="https://github.com/user-attachments/assets/88b457b7-1408-46f6-866c-dd6845daefc7" />
@@ -76,7 +76,7 @@ Users can RDP into domain-joined client machines, while administrative access to
 
 Access was tested by logging in as an HR user and verifying:
 
--Successful access to authorized HR folders
+-Successful access to authorized HR folders<br>
 -Access denied to unauthorized folders (Ex. Sales Folder)
 <img width="1052" height="792" alt="access client A" src="https://github.com/user-attachments/assets/d1413e0a-a34e-4f71-961e-4e57ae1dc96e" />
 
