@@ -6,18 +6,18 @@ This lab simulates a small enterprise Active Directory environment focused on Id
 
 The environment includes:
 
-Active Directory Domain Services <br>
-Structured Organizational Units (OUs)<br>
-Security groups for RBAC<br>
-Network file shares with NTFS + share permissions <br>
-Remote Desktop access controls <br>
+-Active Directory Domain Services <br>
+-Structured Organizational Units (OUs)<br>
+-Security groups for RBAC<br>
+-Network file shares with NTFS + share permissions <br>
+-Remote Desktop access controls <br>
 
 ## Environment
 
-Domain: helpdesk.local
-Domain Controller: Windows Server (AD DS, DNS)<br>
-Client: Windows 10 (domain-joined)<br>
-Tools: Active Directory Users & Computers, NTFS, SMB, Remote Desktop<br>
+-Domain: helpdesk.local
+-Domain Controller: Windows Server (AD DS, DNS)<br>
+-Client: Windows 10 (domain-joined)<br>
+-Tools: Active Directory Users & Computers, NTFS, SMB, Remote Desktop<br>
 
 ## Organizational Unit (OU) Design
 Custom OUs were created to avoid using default AD containers and to support scalable identity management. This structure supports clean onboarding, role changes, and deprovisioning.
@@ -27,12 +27,12 @@ Custom OUs were created to avoid using default AD containers and to support scal
 
 Users were created and placed in department-specific OUs.
 ### Security Groups
-Access wass granted only through groups, never directly to users. <br>
-HR_Read / HR_Modify <br>
-Finance_Read / Finance_Modify <br>
-Sales_Read<br>
-IT_Admin<br>
-Remote_Desktop_Users <br>
+Access wass granted only through groups, never directly to users: <br>
+-HR_Read / HR_Modify <br>
+-Finance_Read / Finance_Modify <br>
+-Sales_Read<br>
+-IT_Admin<br>
+Remote_Desktop_Users <br><br>
 This implements Role-Based Access Control (RBAC) and simplifies access management.
 <img width="953" height="671" alt="Users in Correct OUs" src="https://github.com/user-attachments/assets/fa988a20-2de6-4eb9-8dac-471e16178bbe" />
 <img width="950" height="672" alt="Security Groups" src="https://github.com/user-attachments/assets/24783097-0752-414c-99d1-e4a9779a7558" />
@@ -53,7 +53,7 @@ Least privilege enforced via NTFS permissions
 
 ### NTFS Permissions
 Root Folder (CompanyShares):<br>
-Authenticated Users → Read & List (folder traversal only)
+Authenticated Users > Read & List (folder traversal only)
 
 Department Folders:
 
